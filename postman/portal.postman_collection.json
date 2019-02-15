@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "306b2aa0-50af-4ab4-8e3c-fb9de8bef364",
+		"name": "portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Orgao",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmaWxvc29maXN0byIsImNyZWF0ZWQiOjE1NDIyMzE3ODIwMzEsImV4cCI6MTU0MjgzNjU4Mn0.nX_HwTfkbWt6eiQVqiLOyepbcPDsUegHBSsJwk67svtmtTAvhTWyLtPbuX1FFsSIa8TCzqftf5wYmV4mwMpQPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/orgao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orgao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmaWxvc29maXN0byIsImNyZWF0ZWQiOjE1NDIxNjA4NTU1NDYsImV4cCI6MTU0Mjc2NTY1NX0.vcHEF_bJFMQKDsaZxrSTMCwIsOt07P4MqdziSMVEZ0eqbURTenostOxBwYD48INgaBdeYknZJWfgnXtUu3jjRw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/orgao/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orgao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmaWxvc29maXN0byIsImNyZWF0ZWQiOjE1NDIxNjA4NTU1NDYsImV4cCI6MTU0Mjc2NTY1NX0.vcHEF_bJFMQKDsaZxrSTMCwIsOt07P4MqdziSMVEZ0eqbURTenostOxBwYD48INgaBdeYknZJWfgnXtUu3jjRw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/orgao/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orgao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmaWxvc29maXN0byIsImNyZWF0ZWQiOjE1NDIyMzAwOTYxOTQsImV4cCI6MTU0MjgzNDg5Nn0.0EUhXVNtPo2sLaZKF84hXSWaDUMeF6a5z8I5nzpko20sGqib2P-Mm17mSkzTkJ7dT0ZBuiFP2bNghqqng3qVnA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nom_Orgao\": \"RS\",\n\t\"Num_Ug\": \"1020\",\n\t\"Num_Gestao\" : \"001\",\n\t\"Num_Cnpj\": \"11111111111\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/orgao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orgao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8989/v1/estado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmaWxvc29maXN0byIsImNyZWF0ZWQiOjE1NDIxNjA4NTU1NDYsImV4cCI6MTU0Mjc2NTY1NX0.vcHEF_bJFMQKDsaZxrSTMCwIsOt07P4MqdziSMVEZ0eqbURTenostOxBwYD48INgaBdeYknZJWfgnXtUu3jjRw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n\t\"nome\": \"Rio Grande do Sul\",\n\t\"uf\": \"RS\",\n\t\"codigoIBGE\": 1020\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8989/v1/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"v1",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c827acee-fea8-4fc6-aafa-b179a296e52d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "870abe65-03a2-4d83-8115-a78ea5b1a5b5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
